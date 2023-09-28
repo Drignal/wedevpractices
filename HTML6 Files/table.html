@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta charset="UTF-8">
+	
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+div{
+   text-align: center;
+}
+.sched{
+   margin: auto;
+   width: 550px;
+   border: solid 2px #000000;
+   padding: 3px;
+
+}
+tr{
+   border: solid 3px #000000;
+}
+td{
+   border: solid 3px #000000;
+   padding: 3px;
+}
+th{
+   background-color: lightgray;
+}
+
+</style>
+</head>
+<body>
+<div >
+   <table class="sched">
+      <caption>Class Shcedule</caption>
+      <tr>
+         <th>Courses</th>
+         <td>Monday</td>
+         <td>Tuesday</td>
+         <td>Wendnesday</td>
+         <td>Thursday</td>
+         <td>Friday</td>
+      </tr>  
+      <tr>
+       <th>INFO 1120</th>
+      <td></td>
+      <td>9-11</td>
+      <td></td>
+      <td>9-11</td>
+      <td rowspan="2"></td>
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4">12-1</td>
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from Row 1-->
+      </tr>
+      <tr>
+
+
+      </tr>
+   </table>
+</div>
+
+
+
+</body>
+</html>
+
