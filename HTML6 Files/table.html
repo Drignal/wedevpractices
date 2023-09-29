@@ -12,37 +12,47 @@
 div{
    text-align: center;
 }
-.sched{
+table{
    margin: auto;
    width: 550px;
    border: solid 2px #000000;
    padding: 3px;
-
 }
 tr{
-   border: solid 3px #000000;
+   border: solid 1px #000000;
 }
 td{
-   border: solid 3px #000000;
+   border: solid 1px #000000;
    padding: 3px;
+   background-color: white;
 }
 th{
-   background-color: lightgray;
+   border: solid 1px black;
+}
+.firstcol{
+   color: #cccccc;
+   
+   width: 25%;
+}
+.secondcol{
+   background-color: #99FF66;
 }
 
 </style>
 </head>
 <body>
 <div >
-   <table class="sched">
+   <table>
       <caption>Class Shcedule</caption>
+      <colgroup class="firstcol" span="1">
+         <colgroup class="secondcol" span="5">
       <tr>
          <th>Courses</th>
-         <td>Monday</td>
-         <td>Tuesday</td>
-         <td>Wendnesday</td>
-         <td>Thursday</td>
-         <td>Friday</td>
+         <th>Monday</th>
+         <th>Tuesday</th>
+         <th>Wendnesday</th>
+         <th>Thursday</th>
+         <th>Friday</th>
       </tr>  
       <tr>
        <th>INFO 1120</th>
@@ -62,8 +72,12 @@ th{
          <!--Spanned from Row 1-->
       </tr>
       <tr>
-
-
+         <th>2420</th>
+         <td colspan="5">Online Avaible 24/7</td>
+          <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
       </tr>
    </table>
 </div>
